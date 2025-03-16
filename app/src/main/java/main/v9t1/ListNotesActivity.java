@@ -36,7 +36,7 @@ class Adapter extends RecyclerView.Adapter<NoteViewHolder> {
         Note note = storage.getNotes().get(position);
 
         holder.NoteContentText.setText(note.content);
-        holder.NoteIdText.setText(Integer.toString(note.id));
+        holder.NoteIdText.setText(Integer.toString(note.Id));
         holder.NoteTitleText.setText(note.title);
         holder.NoteTimeAndDateText.setText(note.timeAndDate);
     }

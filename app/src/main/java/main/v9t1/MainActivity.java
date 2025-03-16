@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 
 class Note {
-    int id;
+    int Id;
     String title;
     String content;
     String timeAndDate;
@@ -35,7 +35,7 @@ class Note {
 
         timeAndDate = String.format("%d:%d %d.%d.%d", hour, min, day, mon, year);
 
-        id = ++NoteStorage.getInstance().id;
+        Id = ++NoteStorage.getInstance().id;
     }
 }
 
